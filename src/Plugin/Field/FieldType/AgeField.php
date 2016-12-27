@@ -47,7 +47,7 @@ class AgeField extends FieldItemBase {
 
   /**
    * Define when the field type is empty.
-   * This method is important and used internally by Drupal.
+   * Drupal use this method internally.
    */
   public function isEmpty() {
     $isEmpty = FALSE;
