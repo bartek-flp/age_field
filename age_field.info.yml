@@ -1,0 +1,5 @@
+name: 'Age Field'
+description: Provide simple field type.
+type: module
+package: Custom
+core: 8.x
