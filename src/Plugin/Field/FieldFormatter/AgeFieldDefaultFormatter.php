@@ -25,7 +25,7 @@ class AgeFieldDefaultFormatter extends FormatterBase {
       $from = new \DateTime($item->birthday_date);
       $today   = new \DateTime();
       $age = $today->diff($from);
-      $markup = t('Your age is - ') . t(' Years: ') . $age->y . t(' Months: ') . $age->m . t(' Days: ') . $age->d;
+      $markup = t('Your age is - Years: @ageYear Months: @ageMonth Days: @ageDay', array('@ageYear' => $age->y, '@ageMonth' => $age->m, '@ageDay' => $age->d));
       if ($from > $today) {
         $markup = t('WELCOME THE UNBORN');
       }

@@ -50,13 +50,7 @@ class AgeField extends FieldItemBase {
    * Drupal use this method internally.
    */
   public function isEmpty() {
-    $isEmpty = FALSE;
     $birthday_date = $this->get('birthday_date')->getValue();
-
-    if (empty($birthday_date)) {
-      $isEmpty = TRUE;
-    };
-
-    return $isEmpty;
+    return empty($birthday_date);
   }
 }
